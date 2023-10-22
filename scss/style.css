@@ -363,6 +363,7 @@ nav .nav-buttons :last-child:hover {
   border-radius: 8px;
   color: #fff;
   transition: 0.4s;
+  cursor: pointer;
 }
 .tred .tred-content .tred-cards {
   padding-top: 25px;
@@ -386,6 +387,7 @@ nav .nav-buttons :last-child:hover {
 .tred .tred-content .tred-cards .tred-card .card-content:hover {
   filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
+  cursor: pointer;
 }
 .tred .tred-content .tred-cards .tred-card .card-content .imagemas {
   width: 262.891px;
@@ -413,6 +415,7 @@ nav .nav-buttons :last-child:hover {
   background-color: #2a6dc0;
   border: 1px solid #2a6dc0;
   transition: 0.3s;
+  cursor: pointer;
 }
 .tred .tred-content .tred-cards .tred-card .card-content h6 {
   color: var(--text-tittle, #1c3554);
@@ -510,9 +513,10 @@ nav .nav-buttons :last-child:hover {
   width: 288px;
 }
 .tred .tred-content .last-button button:hover {
-  background-color: #fff;
-  color: #f72585;
+  background-color: transparent;
+  color: #021934;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .categories .categories-content h3 {
@@ -555,6 +559,7 @@ nav .nav-buttons :last-child:hover {
 .categories .categories-content .cate-cards .cate-card:hover h5 {
   color: #d4d1d1;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .counter {
@@ -650,6 +655,7 @@ nav .nav-buttons :last-child:hover {
   background-color: #fff;
   color: #f72585;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .testimon {
@@ -725,6 +731,7 @@ nav .nav-buttons :last-child:hover {
 .trusted .trusted-content .dummy svg:hover {
   opacity: 1;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .latest {
@@ -809,6 +816,7 @@ nav .nav-buttons :last-child:hover {
 .latest .latest-content .latest-cards .latest-card .latest-card-content p:nth-child(5):hover {
   color: #f374ad;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 footer {
@@ -895,4 +903,80 @@ footer .foot-foot .frist-foot {
 
 #myBtn:hover {
   background-color: #f374ad;
+}
+
+.dark * {
+  color: white !important;
+}
+
+.dark {
+  background-color: #021934;
+}
+.dark header {
+  background-color: #032c5c;
+}
+.dark header nav .logo path {
+  fill: #fff;
+}
+.dark header nav .nav-input {
+  background-color: #fff;
+}
+.dark header nav .category select {
+  color: plum;
+  background-color: transparent;
+}
+.dark header nav .nav-buttons :first-child {
+  border: 1px solid #fff;
+}
+.dark header nav .nav-buttons :first-child:hover {
+  border: 1px solid #f72585;
+}
+.dark header nav .nav-buttons :last-child:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.dark .hero .hero-content .hero-input button:hover {
+  color: #021934 !important;
+}
+.dark .hero .hero-content .hero-img .total {
+  background-color: #021934;
+}
+.dark .hero .hero-content .hero-img .total .stars .rating input:checked ~ label,
+.dark .hero .hero-content .hero-img .total .stars .rating label:hover,
+.dark .hero .hero-content .hero-img .total .stars .rating label:hover ~ label {
+  color: #faa307 !important;
+  transition: color 0.3s;
+}
+.dark .tred-card .card-content {
+  background-color: #1c3554 !important;
+}
+.dark .tred-card .card-content .stars .rating input:checked ~ label,
+.dark .tred-card .card-content .stars .rating label:hover,
+.dark .tred-card .card-content .stars .rating label:hover ~ label {
+  color: #faa307 !important;
+  transition: color 0.3s;
+}
+.dark .last-button:hover button {
+  background-color: transparent;
+}
+.dark .become button:hover {
+  background-color: transparent !important;
+  border: 2px solid #fff;
+}
+.dark .testimon svg path {
+  fill: #021934;
+}
+.dark .trusted svg path {
+  fill: #fff;
+}
+.dark .latest-card-content {
+  background-color: #1c3554 !important;
+}
+.dark footer a:hover {
+  color: #f72585 !important;
+}
+
+#dark-light {
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

@@ -375,6 +375,7 @@ nav {
           border-radius: 8px;
           color: #fff;
           transition: 0.4s;
+          cursor: pointer;
         }
       }
     }
@@ -397,6 +398,7 @@ nav {
           &:hover {
             filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
             transition: 0.3s;
+            cursor: pointer;
           }
           .imagemas {
             width: 262.891px;
@@ -423,6 +425,7 @@ nav {
                 background-color: #2a6dc0;
                 border: 1px solid #2a6dc0;
                 transition: 0.3s;
+                cursor: pointer;
               }
             }
           }
@@ -529,9 +532,10 @@ nav {
       padding: 8px 24px;
       width: 288px;
       &:hover {
-        background-color: #fff;
-        color: #f72585;
+        background-color: transparent;
+        color: #021934;
         transition: 0.4s;
+        cursor: pointer;
       }
     }
   }
@@ -578,6 +582,7 @@ nav {
         &:hover h5 {
           color: #d4d1d1;
           transition: 0.3s;
+          cursor: pointer;
         }
       }
     }
@@ -677,6 +682,7 @@ nav {
           background-color: #fff;
           color: #f72585;
           transition: 0.4s;
+          cursor: pointer;
         }
       }
     }
@@ -754,6 +760,7 @@ nav {
         &:hover {
           opacity: 1;
           transition: 0.3s;
+          cursor: pointer;
         }
       }
     }
@@ -838,6 +845,7 @@ nav {
             &:hover {
               color: #f374ad;
               transition: 0.3s;
+              cursor: pointer;
             }
           }
         }
@@ -934,4 +942,104 @@ footer {
 
 #myBtn:hover {
   background-color: #f374ad;
+}
+
+.dark * {
+  color: white !important;
+}
+
+.dark {
+  background-color: #021934;
+  header {
+    background-color: #032c5c;
+    nav {
+      .logo path {
+        fill: #fff;
+      }
+      .nav-input {
+        background-color: #fff;
+      }
+      .category {
+        select {
+          color: plum;
+          background-color: transparent;
+        }
+      }
+      .nav-buttons :first-child {
+        border: 1px solid #fff;
+        &:hover {
+          border: 1px solid #f72585;
+        }
+      }
+      .nav-buttons :last-child:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+      }
+    }
+  }
+  .hero {
+    .hero-content {
+      .hero-input button {
+        &:hover {
+          color: #021934 !important;
+        }
+      }
+      .hero-img {
+        .total {
+          background-color: #021934;
+          .stars {
+            .rating input:checked ~ label,
+            .rating label:hover,
+            .rating label:hover ~ label {
+              color: #faa307 !important;
+              transition: color 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tred-card {
+    .card-content {
+      background-color: #1c3554 !important;
+      .stars {
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+          color: #faa307 !important;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+  .last-button:hover button {
+    background-color: transparent;
+  }
+  .become {
+    button:hover {
+      background-color: transparent !important;
+      border: 2px solid #fff;
+    }
+  }
+  .testimon {
+    svg path {
+      fill: #021934;
+    }
+  }
+  .trusted svg path {
+    fill: #fff;
+  }
+  .latest-card-content {
+    background-color: #1c3554 !important;
+  }
+  footer {
+    a:hover {
+      color: #f72585 !important;
+    }
+  }
+}
+
+#dark-light {
+  border: none;
+  background-color: transparent;
 }

@@ -378,6 +378,7 @@ nav {
           background-color: #f72585;
           border-radius: 8px;
           color: #fff;
+          transition: 0.4s;
         }
       }
     }
@@ -391,22 +392,28 @@ nav {
         grid-row-gap: 24px;
         .card-content {
           display: grid;
-          place-items: center;
+          place-items: start;
+          justify-content: center;
           width: 295px;
           height: 427px;
-          background-color: plum;
+          background-color: #fff;
           border-radius: 8px;
-          p {
+          &:hover {
+            filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
+            transition: 0.3s;
+          }
+          .imagemas {
             width: 262.891px;
             height: 208px;
             flex-shrink: 0;
             border-radius: 4px;
             background: var(--text-in-field, #ccc);
             padding-top: 190px;
-            padding-left: 75px;
+            padding-left: 70px;
+            margin-top: 15px;
             button {
               color: var(--text-white, #fff);
-              font-family: Montserrat SemiBold;
+              font-family: "Montserrat";
               font-size: 12px;
               font-style: normal;
               font-weight: 400;
@@ -417,14 +424,113 @@ nav {
               background: var(--other-blue, #4586d6);
               border: 1px solid #4586d6;
               &:hover {
-                background-color: #fff;
-                border: 1px solid #4586d6;
-                color: #1c3554;
+                background-color: #2a6dc0;
+                border: 1px solid #2a6dc0;
+                transition: 0.3s;
               }
             }
           }
+          h6 {
+            color: var(--text-tittle, #1c3554);
+            font-variant-numeric: lining-nums proportional-nums;
+            width: 200px;
+            font-family: "Rubik";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            text-transform: capitalize;
+            padding-top: 6px;
+          }
+        }
+        .card-content :nth-child(3) {
+          width: 262.891px;
+          color: var(--primary-pink, #f72585);
+          font-family: "Montserrat";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 200% */
+        }
+        .reyting {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          .stars {
+            .rating {
+              display: inline-block;
+            }
+
+            .rating input {
+              display: none;
+            }
+
+            .rating label {
+              float: right;
+              cursor: pointer;
+              color: #ccc;
+              transition: color 0.3s;
+            }
+
+            .rating label:before {
+              content: "\2605";
+              font-size: 30px;
+            }
+
+            .rating input:checked ~ label,
+            .rating label:hover,
+            .rating label:hover ~ label {
+              color: #faa307;
+              transition: color 0.3s;
+            }
+          }
+          p {
+            color: var(--text-body, #808080);
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          p {
+            color: var(--text-in-field, #ccc);
+            font-family: "Montserrat";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px; /* 168.75% */
+            text-decoration: 1px line-through;
+          }
+          h5 {
+            color: var(--text-tittle, #1c3554);
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; /* 133.333% */
+          }
         }
       }
+    }
+    .last-button button {
+      margin-top: 55px;
+      color: var(--text-white, #fff);
+      text-align: center;
+      font-family: "Montserrat" SemiBold;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+      border-radius: 8px;
+      background: var(--primary-pink, #f72585);
+      border: 1px solid #f72585;
+      padding: 8px 24px;
+      width: 288px;
     }
   }
 }

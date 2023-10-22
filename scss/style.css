@@ -364,6 +364,7 @@ nav .nav-buttons :last-child:hover {
   background-color: #f72585;
   border-radius: 8px;
   color: #fff;
+  transition: 0.4s;
 }
 .tred .tred-content .tred-cards {
   padding-top: 25px;
@@ -377,24 +378,30 @@ nav .nav-buttons :last-child:hover {
 }
 .tred .tred-content .tred-cards .card .card-content {
   display: grid;
-  place-items: center;
+  place-items: start;
+  justify-content: center;
   width: 295px;
   height: 427px;
-  background-color: plum;
+  background-color: #fff;
   border-radius: 8px;
 }
-.tred .tred-content .tred-cards .card .card-content p {
+.tred .tred-content .tred-cards .card .card-content:hover {
+  filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
+  transition: 0.3s;
+}
+.tred .tred-content .tred-cards .card .card-content .imagemas {
   width: 262.891px;
   height: 208px;
   flex-shrink: 0;
   border-radius: 4px;
   background: var(--text-in-field, #ccc);
   padding-top: 190px;
-  padding-left: 75px;
+  padding-left: 70px;
+  margin-top: 15px;
 }
-.tred .tred-content .tred-cards .card .card-content p button {
+.tred .tred-content .tred-cards .card .card-content .imagemas button {
   color: var(--text-white, #fff);
-  font-family: Montserrat SemiBold;
+  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -404,8 +411,102 @@ nav .nav-buttons :last-child:hover {
   background: var(--other-blue, #4586d6);
   border: 1px solid #4586d6;
 }
-.tred .tred-content .tred-cards .card .card-content p button:hover {
-  background-color: #fff;
-  border: 1px solid #4586d6;
-  color: #1c3554;
+.tred .tred-content .tred-cards .card .card-content .imagemas button:hover {
+  background-color: #2a6dc0;
+  border: 1px solid #2a6dc0;
+  transition: 0.3s;
+}
+.tred .tred-content .tred-cards .card .card-content h6 {
+  color: var(--text-tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  width: 200px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  padding-top: 6px;
+}
+.tred .tred-content .tred-cards .card .card-content :nth-child(3) {
+  width: 262.891px;
+  color: var(--primary-pink, #f72585);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+}
+.tred .tred-content .tred-cards .card .reyting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tred .tred-content .tred-cards .card .reyting .stars .rating {
+  display: inline-block;
+}
+.tred .tred-content .tred-cards .card .reyting .stars .rating input {
+  display: none;
+}
+.tred .tred-content .tred-cards .card .reyting .stars .rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+.tred .tred-content .tred-cards .card .reyting .stars .rating label:before {
+  content: "★";
+  font-size: 30px;
+}
+.tred .tred-content .tred-cards .card .reyting .stars .rating input:checked ~ label,
+.tred .tred-content .tred-cards .card .reyting .stars .rating label:hover,
+.tred .tred-content .tred-cards .card .reyting .stars .rating label:hover ~ label {
+  color: #faa307;
+  transition: color 0.3s;
+}
+.tred .tred-content .tred-cards .card .reyting p {
+  color: var(--text-body, #808080);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.tred .tred-content .tred-cards .card .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tred .tred-content .tred-cards .card .price p {
+  color: var(--text-in-field, #ccc);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  -webkit-text-decoration: 1px line-through;
+          text-decoration: 1px line-through;
+}
+.tred .tred-content .tred-cards .card .price h5 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+.tred .tred-content .last-button button {
+  margin-top: 55px;
+  color: var(--text-white, #fff);
+  text-align: center;
+  font-family: "Montserrat" SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  border-radius: 8px;
+  background: var(--primary-pink, #f72585);
+  border: 1px solid #f72585;
+  padding: 8px 24px;
+  width: 288px;
 }/*# sourceMappingURL=style.css.map */

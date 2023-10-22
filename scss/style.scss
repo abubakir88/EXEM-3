@@ -7,11 +7,7 @@
 //   src: url(../fonts/);
 // }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -384,7 +380,7 @@ nav {
     }
     .tred-cards {
       padding-top: 25px;
-      .card {
+      .tred-card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -519,6 +515,7 @@ nav {
     }
     .last-button button {
       margin-top: 55px;
+      margin-bottom: 150px;
       color: var(--text-white, #fff);
       text-align: center;
       font-family: "Montserrat" SemiBold;
@@ -531,6 +528,52 @@ nav {
       border: 1px solid #f72585;
       padding: 8px 24px;
       width: 288px;
+    }
+  }
+}
+
+.categories {
+  .categories-content {
+    h3 {
+      color: var(--text-tittle, #1c3554);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: "Rubik";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 63.984px; /* 133.3% */
+    }
+    .cate-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 24px;
+      padding-top: 50px;
+      .cate-card {
+        display: grid;
+        place-items: start;
+        justify-content: center;
+        width: 296px;
+        height: 350px;
+        background-color: #666;
+        border-radius: 8px;
+
+        h5 {
+          color: var(--text-white, #fff);
+          font-family: Rubik;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px; /* 133.333% */
+          text-align: center;
+          padding-top: 280px;
+          width: 170px;
+        }
+        &:hover h5 {
+          color: #d4d1d1;
+        }
+      }
     }
   }
 }

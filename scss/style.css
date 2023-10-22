@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -369,14 +367,14 @@ nav .nav-buttons :last-child:hover {
 .tred .tred-content .tred-cards {
   padding-top: 25px;
 }
-.tred .tred-content .tred-cards .card {
+.tred .tred-content .tred-cards .tred-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 24px;
 }
-.tred .tred-content .tred-cards .card .card-content {
+.tred .tred-content .tred-cards .tred-card .card-content {
   display: grid;
   place-items: start;
   justify-content: center;
@@ -385,11 +383,11 @@ nav .nav-buttons :last-child:hover {
   background-color: #fff;
   border-radius: 8px;
 }
-.tred .tred-content .tred-cards .card .card-content:hover {
+.tred .tred-content .tred-cards .tred-card .card-content:hover {
   filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
 }
-.tred .tred-content .tred-cards .card .card-content .imagemas {
+.tred .tred-content .tred-cards .tred-card .card-content .imagemas {
   width: 262.891px;
   height: 208px;
   flex-shrink: 0;
@@ -399,7 +397,7 @@ nav .nav-buttons :last-child:hover {
   padding-left: 70px;
   margin-top: 15px;
 }
-.tred .tred-content .tred-cards .card .card-content .imagemas button {
+.tred .tred-content .tred-cards .tred-card .card-content .imagemas button {
   color: var(--text-white, #fff);
   font-family: "Montserrat";
   font-size: 12px;
@@ -411,12 +409,12 @@ nav .nav-buttons :last-child:hover {
   background: var(--other-blue, #4586d6);
   border: 1px solid #4586d6;
 }
-.tred .tred-content .tred-cards .card .card-content .imagemas button:hover {
+.tred .tred-content .tred-cards .tred-card .card-content .imagemas button:hover {
   background-color: #2a6dc0;
   border: 1px solid #2a6dc0;
   transition: 0.3s;
 }
-.tred .tred-content .tred-cards .card .card-content h6 {
+.tred .tred-content .tred-cards .tred-card .card-content h6 {
   color: var(--text-tittle, #1c3554);
   font-variant-numeric: lining-nums proportional-nums;
   width: 200px;
@@ -428,7 +426,7 @@ nav .nav-buttons :last-child:hover {
   text-transform: capitalize;
   padding-top: 6px;
 }
-.tred .tred-content .tred-cards .card .card-content :nth-child(3) {
+.tred .tred-content .tred-cards .tred-card .card-content :nth-child(3) {
   width: 262.891px;
   color: var(--primary-pink, #f72585);
   font-family: "Montserrat";
@@ -437,34 +435,34 @@ nav .nav-buttons :last-child:hover {
   font-weight: 400;
   line-height: 24px; /* 200% */
 }
-.tred .tred-content .tred-cards .card .reyting {
+.tred .tred-content .tred-cards .tred-card .reyting {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.tred .tred-content .tred-cards .card .reyting .stars .rating {
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating {
   display: inline-block;
 }
-.tred .tred-content .tred-cards .card .reyting .stars .rating input {
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating input {
   display: none;
 }
-.tred .tred-content .tred-cards .card .reyting .stars .rating label {
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating label {
   float: right;
   cursor: pointer;
   color: #ccc;
   transition: color 0.3s;
 }
-.tred .tred-content .tred-cards .card .reyting .stars .rating label:before {
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating label:before {
   content: "★";
   font-size: 30px;
 }
-.tred .tred-content .tred-cards .card .reyting .stars .rating input:checked ~ label,
-.tred .tred-content .tred-cards .card .reyting .stars .rating label:hover,
-.tred .tred-content .tred-cards .card .reyting .stars .rating label:hover ~ label {
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating input:checked ~ label,
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating label:hover,
+.tred .tred-content .tred-cards .tred-card .reyting .stars .rating label:hover ~ label {
   color: #faa307;
   transition: color 0.3s;
 }
-.tred .tred-content .tred-cards .card .reyting p {
+.tred .tred-content .tred-cards .tred-card .reyting p {
   color: var(--text-body, #808080);
   font-family: "Montserrat";
   font-size: 14px;
@@ -472,12 +470,12 @@ nav .nav-buttons :last-child:hover {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
-.tred .tred-content .tred-cards .card .price {
+.tred .tred-content .tred-cards .tred-card .price {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.tred .tred-content .tred-cards .card .price p {
+.tred .tred-content .tred-cards .tred-card .price p {
   color: var(--text-in-field, #ccc);
   font-family: "Montserrat";
   font-size: 16px;
@@ -487,7 +485,7 @@ nav .nav-buttons :last-child:hover {
   -webkit-text-decoration: 1px line-through;
           text-decoration: 1px line-through;
 }
-.tred .tred-content .tred-cards .card .price h5 {
+.tred .tred-content .tred-cards .tred-card .price h5 {
   color: var(--text-tittle, #1c3554);
   font-family: Rubik;
   font-size: 24px;
@@ -497,6 +495,7 @@ nav .nav-buttons :last-child:hover {
 }
 .tred .tred-content .last-button button {
   margin-top: 55px;
+  margin-bottom: 150px;
   color: var(--text-white, #fff);
   text-align: center;
   font-family: "Montserrat" SemiBold;
@@ -509,4 +508,45 @@ nav .nav-buttons :last-child:hover {
   border: 1px solid #f72585;
   padding: 8px 24px;
   width: 288px;
+}
+
+.categories .categories-content h3 {
+  color: var(--text-tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Rubik";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px; /* 133.3% */
+}
+.categories .categories-content .cate-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 24px;
+  padding-top: 50px;
+}
+.categories .categories-content .cate-cards .cate-card {
+  display: grid;
+  place-items: start;
+  justify-content: center;
+  width: 296px;
+  height: 350px;
+  background-color: #666;
+  border-radius: 8px;
+}
+.categories .categories-content .cate-cards .cate-card h5 {
+  color: var(--text-white, #fff);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  text-align: center;
+  padding-top: 280px;
+  width: 170px;
+}
+.categories .categories-content .cate-cards .cate-card:hover h5 {
+  color: #d4d1d1;
 }/*# sourceMappingURL=style.css.map */

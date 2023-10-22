@@ -13,21 +13,26 @@ function shrink() {
 }
 // SHRINK
 
-window.addEventListener("scroll", function () {
-  toggleBacktop();
-});
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
-let backtop = document.getElementById("backtop");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
 
-function toggleBacktop() {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    backtop.style.bottom = "20px";
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    backtop.style.bottom = "-50px";
+    mybutton.style.display = "none";
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 // BACK-TOP

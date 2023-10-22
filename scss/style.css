@@ -505,9 +505,14 @@ nav .nav-buttons :last-child:hover {
   line-height: 32px; /* 200% */
   border-radius: 8px;
   background: var(--primary-pink, #f72585);
-  border: 1px solid #f72585;
+  border: 2px solid #f72585;
   padding: 8px 24px;
   width: 288px;
+}
+.tred .tred-content .last-button button:hover {
+  background-color: #fff;
+  color: #f72585;
+  transition: 0.4s;
 }
 
 .categories .categories-content h3 {

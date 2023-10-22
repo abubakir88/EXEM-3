@@ -525,9 +525,14 @@ nav {
       line-height: 32px; /* 200% */
       border-radius: 8px;
       background: var(--primary-pink, #f72585);
-      border: 1px solid #f72585;
+      border: 2px solid #f72585;
       padding: 8px 24px;
       width: 288px;
+      &:hover {
+        background-color: #fff;
+        color: #f72585;
+        transition: 0.4s;
+      }
     }
   }
 }

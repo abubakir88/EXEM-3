@@ -1530,6 +1530,13 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+  .hero .hero-content .hero-img {
+    width: 112%;
+    .total {
+      width: 40%;
+    }
+  }
+
   .tred {
     .tred-content {
       h3 {
@@ -1546,9 +1553,18 @@ footer {
   }
   .become {
     .become-content {
-      .become-texts button {
-        font-size: 16px;
-        padding: 8px 20px;
+      display: block;
+      .become-img {
+        width: 100%;
+        height: 400px;
+      }
+      .become-texts {
+        width: 100%;
+        padding-top: 20px;
+        button {
+          font-size: 16px;
+          padding: 8px 20px;
+        }
       }
     }
   }

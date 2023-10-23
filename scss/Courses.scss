@@ -463,6 +463,85 @@ main {
   }
 }
 
+.all {
+  padding-top: 100px;
+  .all-content {
+    .all-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        color: var(--text-tittle, #1c3554);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Heading/Bold/H3 - 48px */
+        font-family: Rubik;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 133.3% */
+      }
+      .title-buttons {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        a {
+          align-items: center;
+          text-decoration: none;
+          color: var(--primary-pink, #f72585);
+          font-family: Montserrat;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px; /* 200% */
+          padding: 16px 30px;
+          border-radius: 8px;
+          background: var(--primary-20-pink, #fff5f9);
+
+          &:hover {
+            background-color: #f72585;
+            border-radius: 8px;
+            color: #fff;
+            transition: 0.4s;
+            svg path {
+              fill: #fff;
+            }
+          }
+        }
+        button {
+          border: none;
+          background-color: #f72585;
+          border: 2px solid #f7f7f7;
+          color: #fff;
+          border-radius: 8px;
+          color: var(--other-white, #fff);
+          font-family: Montserrat;
+          padding: 15px 30px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px; /* 200% */
+          &:hover {
+            background-color: transparent;
+            color: #f72585;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+    .sale {
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      .sale-sidebar {
+        width: 242px;
+        height: 1576px;
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+}
+
 .dark {
   background-color: #021934;
 }

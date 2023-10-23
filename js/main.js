@@ -1,17 +1,11 @@
-window.addEventListener("scroll", function () {
-  shrink();
+const header = document.querySelector("header");
+const menuBtn = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+  header.classList.toggle("open");
 });
 
-let navbar = document.getElementById("navbar");
-
-function shrink() {
-  if (scrollY > 100) {
-    navbar.classList.add("navbar-shrink");
-  } else {
-    navbar.classList.remove("navbar-shrink");
-  }
-}
-// SHRINK
+// NAV TOGGLE
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
@@ -44,12 +38,3 @@ modeBtn.addEventListener("click", function () {
 });
 
 // DARK MODE
-
-const header = document.querySelector("header");
-const menuBtn = document.querySelector(".menu");
-
-menuBtn.addEventListener("click", () => {
-  header.classList.toggle("open");
-});
-
-// NAV TOGGLE

@@ -76,7 +76,7 @@
               </svg>
             </a>
           </div>
-          <div class="nav-input">
+          <div class="nav-input nav-items">
             <input type="search" placeholder="Search bar" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@
               />
             </svg>
           </div>
-          <div class="category">
+          <div class="category nav-items">
             <label for="IT">Category</label>
             <select name="IT" id="IT">
               <option value=""></option>
@@ -102,12 +102,12 @@
               <option value="SMM">SMM</option>
             </select>
           </div>
-          <p><b>Become an Mentor</b></p>
-          <div class="nav-buttons">
+          <p class="nav-items"><b>Become an Mentor</b></p>
+          <div class="nav-buttons nav-items">
             <button>Login</button>
             <button>Sign Up</button>
           </div>
-          <button id="dark-light">
+          <button id="dark-light" class="nav-items">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -123,6 +123,17 @@
                 d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z"
                 fill="#F72585"
               />
+            </svg>
+          </button>
+          <button class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1)"
+            >
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
             </svg>
           </button>
         </nav>
@@ -215,7 +226,6 @@
               </div>
             </div>
             <div class="hero-img">
-              <!-- <img src="./images/hero img.png" alt="" /> -->
               <div class="bell-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -266,6 +276,75 @@
               </div>
               <div class="total">
                 <h5>500+</h5>
+                <h6>Total Review</h6>
+                <div class="stars">
+                  <div class="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label for="star1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-img-2">
+              <div class="bell-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="58"
+                  height="58"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255)"
+                >
+                  <circle cx="12" cy="7.5" r="1.5"></circle>
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
+                  ></path>
+                  <path
+                    d="M16.5 10.5 16 9l-3 1h-2L8 9l-.5 1.5 3 1V13L9 17.25l1.5.75 1.25-3.5h.5L13.5 18l1.5-.75L13.5 13v-1.5l3-1z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="chack-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="58"
+                  height="58"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255)"
+                >
+                  <path
+                    d="M11.63 21.91A.9.9 0 0 0 12 22a1 1 0 0 0 .41-.09C22 17.67 21 7 21 6.9a1 1 0 0 0-.55-.79l-8-4a1 1 0 0 0-.9 0l-8 4A1 1 0 0 0 3 6.9c0 .1-.92 10.77 8.63 15.01zM5 7.63l7-3.51 7 3.51c.05 2-.27 9-7 12.27C5.26 16.63 4.94 9.64 5 7.63z"
+                  ></path>
+                  <path
+                    d="M11.06 16h2v-3h3.01v-2h-3.01V8h-2v3h-3v2h3v3z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="love-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M26.3728 7.3321C24.1894 8.10526 22.8741 8.86377 21.5404 10.2248C21.0466 10.7287 20.6108 11.2793 20.2359 11.8744C19.5982 11.6638 18.9412 11.5184 18.2683 11.438C16.3355 11.2069 14.755 11.4462 12.65 12.1916C7.01204 14.1881 4.56926 20.3103 6.7177 26.3773C8.3402 30.9591 12.4622 34.4804 18.7362 37.0751C22.0294 38.437 26.0057 39.5308 28.7084 39.9047L30.2547 40.1187L31.3218 38.9793C33.1869 36.9878 35.5887 33.6354 37.2909 30.5045C40.5338 24.5397 41.5212 19.2091 39.8987 14.6273C37.773 8.62451 31.9686 5.37658 26.3728 7.3321ZM36.8822 15.6955C38.1534 19.2851 37.3292 23.7345 34.4795 28.976C32.9259 31.8338 30.7207 34.9207 29.0517 36.7215C26.6214 36.3723 22.965 35.3611 19.9591 34.118C14.4459 31.8379 11.0053 28.8987 9.73415 25.3091C8.14675 20.8264 9.84063 16.5812 13.7181 15.2081C15.3919 14.6154 16.4935 14.4486 17.8884 14.6153C18.7124 14.7138 19.4942 14.9523 20.2332 15.3346L21.7622 16.1254L22.4393 14.5428C22.7771 13.7534 23.24 13.0624 23.8259 12.4645C24.7784 11.4925 25.6821 10.9714 27.4348 10.3508C31.27 9.0105 35.3169 11.275 36.8822 15.6955Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="total">
+                <h5>1000+</h5>
                 <h6>Total Review</h6>
                 <div class="stars">
                   <div class="rating">
@@ -1553,6 +1632,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="foot-content">
         <div class="foot-logo">

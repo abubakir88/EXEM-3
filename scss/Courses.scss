@@ -424,6 +424,11 @@ main {
         border-radius: 8px;
         background: var(--primary-pink, #f72585);
         border: 1px solid #f72585;
+        &:hover {
+          background-color: transparent;
+          color: #f72585;
+          transition: 0.4s;
+        }
       }
     }
     .cate-cards {
@@ -534,9 +539,484 @@ main {
       display: flex;
       justify-content: space-between;
       .sale-sidebar {
-        width: 242px;
+        width: 290px;
         height: 1576px;
         border-right: 1px solid #ccc;
+        .reting {
+          width: 280px;
+          height: 350px;
+          flex-shrink: 0;
+          border-bottom: 1px solid #ccc;
+          .reting-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h5 {
+              color: var(--text-tittle, #1c3554);
+              font-variant-numeric: lining-nums proportional-nums;
+              font-family: Rubik;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 32px; /* 133.333% */
+            }
+            svg {
+              cursor: pointer;
+            }
+          }
+          .feedback-1 {
+            // padding-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .checkbox-label {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .checkbox-label input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+            }
+
+            .checkbox-label:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+
+            .checkbox-label input:checked ~ .checkmark {
+              background-color: #2196f3;
+            }
+
+            .checkbox-label .checkmark::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .checkbox-label input:checked ~ .checkmark::after {
+              display: block;
+            }
+          }
+        }
+        .stars {
+          padding-top: 10px;
+          .rating {
+            display: inline-block;
+          }
+
+          .rating input {
+            display: none;
+          }
+
+          .rating label {
+            float: right;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s;
+          }
+
+          .rating label:before {
+            content: "\2605";
+            font-size: 30px;
+          }
+
+          .rating input:checked ~ label,
+          .rating label:hover,
+          .rating label:hover ~ label {
+            color: #faa307;
+            transition: color 0.3s;
+          }
+        }
+        h5 {
+          padding-top: 13px;
+          color: var(--text-tittle, #1c3554);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 171.429% */
+        }
+        p {
+          padding-top: 12px;
+          color: var(--text-body, #808080);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 171.429% */
+        }
+      }
+      .durations {
+        width: 280px;
+        height: 270px;
+        flex-shrink: 0;
+        border-bottom: 1px solid #ccc;
+        .durations-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h5 {
+            color: var(--text-tittle, #1c3554);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+          }
+        }
+        .hours {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          height: 50px;
+          .galochka {
+            .checkbox-label {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .checkbox-label input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+            }
+
+            .checkbox-label:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+
+            .checkbox-label input:checked ~ .checkmark {
+              background-color: #2196f3;
+            }
+
+            .checkbox-label .checkmark::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .checkbox-label input:checked ~ .checkmark::after {
+              display: block;
+            }
+          }
+          h4 {
+            padding-top: 10px;
+            color: var(--text-tittle, #1c3554);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+          p {
+            color: var(--text-body, #808080);
+            font-family: Montserrat SemiBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+      }
+      .golang {
+        width: 280px;
+        height: 245px;
+        border-bottom: 1px solid #ccc;
+        .golang-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h5 {
+            color: var(--text-tittle, #1c3554);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+          }
+        }
+        .hours {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          height: 50px;
+          .galochka {
+            .checkbox-label {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .checkbox-label input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+            }
+
+            .checkbox-label:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+
+            .checkbox-label input:checked ~ .checkmark {
+              background-color: #2196f3;
+            }
+
+            .checkbox-label .checkmark::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .checkbox-label input:checked ~ .checkmark::after {
+              display: block;
+            }
+          }
+          h4 {
+            padding-top: 10px;
+            color: var(--text-tittle, #1c3554);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+          p {
+            color: var(--text-body, #808080);
+            font-family: Montserrat SemiBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+      }
+      .Language {
+        width: 280px;
+        height: 300px;
+        border-bottom: 1px solid #ccc;
+        .Language-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h5 {
+            color: var(--text-tittle, #1c3554);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+          }
+        }
+        .hours {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          height: 50px;
+          .galochka {
+            .checkbox-label {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .checkbox-label input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+            }
+
+            .checkbox-label:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+
+            .checkbox-label input:checked ~ .checkmark {
+              background-color: #2196f3;
+            }
+
+            .checkbox-label .checkmark::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .checkbox-label input:checked ~ .checkmark::after {
+              display: block;
+            }
+          }
+          h4 {
+            padding-top: 10px;
+            color: var(--text-tittle, #1c3554);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+          p {
+            color: var(--text-body, #808080);
+            font-family: Montserrat SemiBold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+        .show {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          svg {
+            margin-top: 12px;
+          }
+        }
+      }
+      .price {
+        width: 290px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 190px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        h5 {
+          color: var(--text-tittle, #1c3554);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Rubik;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 133.333% */
+        }
+      }
+      .Features {
+        width: 290px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        h5 {
+          color: var(--text-tittle, #1c3554);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Rubik;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 133.333% */
+        }
       }
     }
   }

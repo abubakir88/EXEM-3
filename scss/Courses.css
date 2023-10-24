@@ -17,7 +17,7 @@ html {
 }
 
 header {
-  box-shadow: 3px 3px 15px 1px #ddd;
+  box-shadow: 3px 3px 15px 1px #1c3554;
   position: fixed;
   top: 0;
   left: 0;
@@ -65,12 +65,12 @@ nav {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 1300px) {
   .open .nav-items {
     left: 0;
   }
 }
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 1300px) {
   .nav-items {
     display: flex;
     align-items: center;
@@ -510,6 +510,10 @@ main {
   background-color: transparent;
   color: #f72585;
   transition: 0.4s;
+  background-color: #fff5f9;
+}
+.all .all-content .all-title .title-buttons button:hover svg path {
+  fill: #f72585;
 }
 .all .all-content .sale {
   padding-top: 40px;
@@ -949,11 +953,432 @@ main {
   font-weight: 700;
   line-height: 32px; /* 133.333% */
 }
+.all .all-content .sale-cards .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 24px;
+}
+.all .all-content .sale-cards .cards .card-content {
+  display: grid;
+  place-items: start;
+  justify-content: center;
+  width: 295px;
+  height: 427px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+.all .all-content .sale-cards .cards .card-content:hover {
+  filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
+  transition: 0.3s;
+  cursor: pointer;
+}
+.all .all-content .sale-cards .cards .card-content .imagemas {
+  width: 262.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--text-in-field, #ccc);
+  padding-top: 190px;
+  padding-left: 70px;
+  margin-top: 15px;
+  margin-left: 14px;
+}
+.all .all-content .sale-cards .cards .card-content .imagemas button {
+  color: var(--text-white, #fff);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  padding: 4px 24px;
+  border-radius: 8px;
+  background: var(--other-blue, #4586d6);
+  border: 1px solid #4586d6;
+}
+.all .all-content .sale-cards .cards .card-content .imagemas button:hover {
+  background-color: #2a6dc0;
+  border: 1px solid #2a6dc0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.all .all-content .sale-cards .cards .card-content h6 {
+  color: var(--text-tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  width: 200px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  padding-top: 16px;
+  margin-left: 14px;
+}
+.all .all-content .sale-cards .cards .card-content :nth-child(3) {
+  width: 262.891px;
+  color: var(--primary-pink, #f72585);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  margin-left: 14px;
+}
+.all .all-content .sale-cards .cards .reyting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 14px;
+}
+.all .all-content .sale-cards .cards .reyting .stars .rating {
+  display: inline-block;
+}
+.all .all-content .sale-cards .cards .reyting .stars .rating input {
+  display: none;
+}
+.all .all-content .sale-cards .cards .reyting .stars .rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+.all .all-content .sale-cards .cards .reyting .stars .rating label:before {
+  content: "★";
+  font-size: 30px;
+}
+.all .all-content .sale-cards .cards .reyting .stars .rating input:checked ~ label,
+.all .all-content .sale-cards .cards .reyting .stars .rating label:hover,
+.all .all-content .sale-cards .cards .reyting .stars .rating label:hover ~ label {
+  color: #faa307;
+  transition: color 0.3s;
+}
+.all .all-content .sale-cards .cards .reyting p {
+  color: var(--text-body, #808080);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.all .all-content .sale-cards .cards .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+.all .all-content .sale-cards .cards .price p {
+  color: var(--text-in-field, #ccc);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  -webkit-text-decoration: 1px line-through;
+          text-decoration: 1px line-through;
+  margin-left: 14px;
+}
+.all .all-content .sale-cards .cards .price h5 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+.all .all-content .sale-cards .sale-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding-top: 56px;
+}
+.all .all-content .sale-cards .sale-buttons p {
+  color: var(--text-in-field, #ccc);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  width: 32px;
+}
+.all .all-content .sale-cards .sale-buttons p:hover {
+  color: #fff;
+  background-color: #f72585;
+  border-radius: 4px;
+  width: 32px;
+  text-align: center;
+}
+.all .all-content .sale-cards .sale-buttons :nth-child(2) {
+  color: #fff;
+  background-color: #f72585;
+  border-radius: 4px;
+  width: 32px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 150px;
+  background-color: #021934;
+  max-width: 100%;
+  min-height: 435px;
+}
+footer .foot-content {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+footer .foot-content .foot-logo {
+  max-width: 500px;
+}
+footer .foot-content .foot-logo p {
+  padding-top: 36px;
+  color: var(--text-white, #fff);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+footer .foot-content .foot-about h5 {
+  color: var(--text-white, #fff);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Rubik";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  padding-bottom: 18px;
+}
+footer .foot-content .foot-about a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-white, #fff);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 200% */
+}
+footer .foot-content .foot-about a:hover {
+  color: #f72585;
+  transition: 0.3s;
+}
+footer .foot-foot {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--text-white, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  gap: 430px;
+  padding-top: 100px;
+}
+footer .foot-foot .frist-foot {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero .hero-content .tred-cards .tred-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .prog .prog-content .cate-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .all .all-content .sale-cards .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .all .all-content .sale-cards .cards :nth-child(n+9) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 936px) {
+  .all .all-content .sale-cards .cards :nth-child(n+4) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  footer .foot-content {
+    padding: 0px 20px;
+    padding-top: 20px;
+  }
+  footer .foot-content .foot-logo {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  footer .foot-foot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .hero .hero-content h2 {
+    font-size: 48px;
+  }
+  .prog .prog-content .prog-title h3 {
+    font-size: 40px;
+  }
+  .prog .prog-content .prog-title button {
+    width: 30%;
+  }
+  .all .all-content .all-title h3 {
+    font-size: 36px;
+  }
+  .all .all-content .all-title .title-buttons {
+    gap: 16px;
+  }
+  .all .all-content .all-title .title-buttons button {
+    padding: 8px 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero .hero-content h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .hero .hero-content p {
+    text-align: center;
+  }
+  .hero .hero-content h4 {
+    text-align: center;
+  }
+  .prog .prog-content .prog-title h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 12px 16px;
+  }
+  .prog .prog-content .prog-title button {
+    line-height: 16px;
+  }
+  .all .all-content .all-title h3 {
+    font-size: 24px;
+  }
+  .all .all-content .all-title .title-buttons a {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+  }
+  .all .all-content .all-title .title-buttons button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  .all .all-content .all-title .title-buttons button svg {
+    width: 20px;
+  }
+  .all .all-content .sale .sale-sidebar {
+    width: 160px;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  .all .all-content .sale .sale-sidebar .reting {
+    width: 160px;
+    height: 100px;
+  }
+  .all .all-content .sale .sale-sidebar .reting .reting-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .all .all-content .sale .sale-sidebar .reting .feedback-1 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .durations {
+    width: 160px;
+    height: 100px;
+  }
+  .all .all-content .sale .sale-sidebar .durations .durations-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .all .all-content .sale .sale-sidebar .durations .hours {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .golang {
+    width: 160px;
+    height: 100px;
+  }
+  .all .all-content .sale .sale-sidebar .golang .golang-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .all .all-content .sale .sale-sidebar .golang .hours {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .Language {
+    width: 160px;
+    height: 100px;
+  }
+  .all .all-content .sale .sale-sidebar .Language .Language-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .all .all-content .sale .sale-sidebar .Language .hours {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .price {
+    width: 160px;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .all .all-content .sale .sale-sidebar .Features {
+    width: 160px;
+    height: 100px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .all .all-content .sale-cards .cards :nth-child(n+3) {
+    display: none;
+  }
+  .all .all-content .sale-cards .sale-buttons {
+    padding-top: 10px;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f72585;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #e577aa;
+}
 
 .dark {
   background-color: #021934;
 }
 
 .dark * {
-  color: white !important;
+  color: #ccc !important;
 }/*# sourceMappingURL=Courses.css.map */

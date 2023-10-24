@@ -65,12 +65,12 @@ nav {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 1300px) {
   .open .nav-items {
     left: 0;
   }
 }
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 1300px) {
   .nav-items {
     display: flex;
     align-items: center;
@@ -1084,7 +1084,7 @@ footer .foot-foot .frist-foot {
 }
 
 .dark * {
-  color: white !important;
+  color: #ccc !important;
 }
 
 .dark {

@@ -1355,6 +1355,62 @@ footer .foot-foot .frist-foot {
     padding-top: 10px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .all .all-content .sale .sale-sidebar {
+    width: 50px;
+  }
+  .all .all-content .sale .sale-sidebar .reting {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .reting .reting-title h5 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .durations {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .durations .durations-title h5 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .golang {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .golang .golang-title h5 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .Language {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .Language .Language-title h5 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .Language .show {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .price {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .price h5 {
+    display: none;
+  }
+  .all .all-content .sale .sale-sidebar .Features {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .all .all-content .sale .sale-sidebar .Features h5 {
+    display: none;
+  }
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -1373,12 +1429,59 @@ footer .foot-foot .frist-foot {
 
 #myBtn:hover {
   background-color: #e577aa;
+  transition: 0.4s;
+}
+
+.dark * {
+  color: #fff !important;
 }
 
 .dark {
   background-color: #021934;
 }
-
-.dark * {
-  color: #ccc !important;
+.dark header {
+  background-color: #021934;
+}
+.dark header nav .logo svg path {
+  fill: #fff;
+}
+.dark header nav .nav-input {
+  background-color: #fff;
+}
+.dark header nav .category select {
+  background-color: transparent;
+}
+.dark .hero .hero-content .in-in :nth-child(2) path {
+  fill: #fff;
+}
+.dark .hero .hero-content .in-in :nth-child(3) {
+  color: #fff;
+}
+.dark .hero .hero-content h2 {
+  color: #fff;
+}
+.dark .hero .hero-content h4 {
+  color: #fff;
+}
+.dark .hero .hero-content .tred-cards .tred-card .card-content {
+  background-color: #1c3554;
+}
+.dark .prog .prog-content .prog-title h3 {
+  color: #fff;
+}
+.dark .all .all-content .all-title .title-buttons a {
+  color: #f72585 !important;
+}
+.dark .all .all-content .all-title .title-buttons a:hover {
+  color: #fff !important;
+}
+.dark .all .all-content .all-title .title-buttons button {
+  border: none;
+}
+.dark .all .all-content .all-title .title-buttons button:hover {
+  color: #f72585 !important;
+  transition: 0.4s;
+}
+.dark .all .all-content .sale-cards .cards .card-content {
+  background-color: #1c3554;
 }/*# sourceMappingURL=Courses.css.map */

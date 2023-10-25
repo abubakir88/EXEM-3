@@ -1520,6 +1520,77 @@ footer {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .all {
+    .all-content {
+      .sale {
+        .sale-sidebar {
+          width: 50px;
+          .reting {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            .reting-title {
+              h5 {
+                display: none;
+              }
+            }
+          }
+          .durations {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            .durations-title {
+              h5 {
+                display: none;
+              }
+            }
+          }
+          .golang {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            .golang-title {
+              h5 {
+                display: none;
+              }
+            }
+          }
+          .Language {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            .Language-title {
+              h5 {
+                display: none;
+              }
+            }
+            .show {
+              display: none;
+            }
+          }
+          .price {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            h5 {
+              display: none;
+            }
+          }
+          .Features {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            h5 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -1538,12 +1609,89 @@ footer {
 
 #myBtn:hover {
   background-color: #e577aa;
+  transition: 0.4s;
+}
+
+.dark * {
+  color: #fff !important;
 }
 
 .dark {
   background-color: #021934;
-}
-
-.dark * {
-  color: #ccc !important;
+  header {
+    background-color: #021934;
+    nav {
+      .logo {
+        svg path {
+          fill: #fff;
+        }
+      }
+      .nav-input {
+        background-color: #fff;
+      }
+      .category {
+        select {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .hero {
+    .hero-content {
+      .in-in :nth-child(2) {
+        path {
+          fill: #fff;
+        }
+      }
+      .in-in :nth-child(3) {
+        color: #fff;
+      }
+      h2 {
+        color: #fff;
+      }
+      h4 {
+        color: #fff;
+      }
+      .tred-cards {
+        .tred-card {
+          .card-content {
+            background-color: #1c3554;
+          }
+        }
+      }
+    }
+  }
+  .prog {
+    .prog-content {
+      .prog-title {
+        h3 {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .all {
+    .all-content {
+      .all-title {
+        .title-buttons {
+          a {
+            color: #f72585 !important;
+            &:hover {
+              color: #fff !important;
+            }
+          }
+          button {
+            border: none;
+            &:hover {
+              color: #f72585 !important;
+              transition: 0.4s;
+            }
+          }
+        }
+      }
+      .sale-cards .cards .card-content {
+        background-color: #1c3554;
+      }
+    }
+  }
 }

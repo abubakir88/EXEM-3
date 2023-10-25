@@ -3,6 +3,10 @@
 html {
   scroll-behavior: smooth;
 }
+html a {
+  text-decoration: none;
+  color: #f72585;
+}
 
 * {
   margin: 0;
